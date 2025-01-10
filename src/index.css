@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Muli, Roboto, Helvetica, Arial, sans-serif;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
