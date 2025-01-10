@@ -7,7 +7,6 @@ import { RootState } from "../../../index";
 
 const Hero = () => {
   const [toggleImage, setToggleImage] = useState<boolean>(false)
-  const [animation, setAnimation] = useState<boolean>(true)
 
   const nasaApiData = useSelector((state: RootState) => state.nasaApiData.data)
 
@@ -27,7 +26,6 @@ const Hero = () => {
 
   const handleToggleImage = () => {
     setToggleImage(!toggleImage)
-    setAnimation(false)
   }
 
   return (
@@ -39,7 +37,7 @@ const Hero = () => {
             &#8595;
           </a>
         </h2>
-        <div onClick={handleToggleImage} className={'cursor-pointer flex absolute top-[50px] right-[10px] ' + (animation ? 'animate-pulse' : '')}>
+        <div onClick={handleToggleImage} className={'cursor-pointer flex absolute top-[50px] right-[10px] ' + (!toggleImage ? 'animate-pulse' : '')}>
           <div className="border border-solid border-black overflow-hidden h-25px w-30px rounded-l bg-black flex items-center justify-center">
             <span className="text-white text-10px font-bold">HD</span>
           </div>
