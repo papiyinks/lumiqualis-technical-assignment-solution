@@ -15,7 +15,7 @@ Some of the libaries/technologies used in this project include:
 
 ## Installation
 
-You can fork and clone the project and run `npm install` to install the external dependencies. This project has been tested with node v16.12.1 and npm 8.1.2.
+You can fork and clone the project and run `npm install` to install the external dependencies. This project has been tested with node v23.6.0 and npm 10.9.2.
 
 ## Helpful commands
 
